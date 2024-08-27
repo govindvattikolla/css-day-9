@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Cars</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    background-color: #87CEEB; /* Light sky blue background */
+}
+
+.car {
+    width: 60px;
+    height: 30px;
+    background-color: #333; /* Dark color to represent the car */
+    position: absolute;
+    top: 50%; /* Start from the middle of the screen */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+#car1 {
+    animation: moveCar1 10s linear infinite;
+}
+
+#car2 {
+    animation: moveCar2 10s linear infinite;
+}
+
+#car3 {
+    animation: moveCar3 10s linear infinite;
+}
+
+#car4 {
+    animation: moveCar4 10s linear infinite;
+}
+
+#car5 {
+    animation: moveCar5 10s linear infinite;
+}
+
+/* Define keyframes for each car */
+@keyframes moveCar1 {
+    0% { left: -100px; }
+    100% { left: 100vw; }
+}
+
+@keyframes moveCar2 {
+    0% { left: -100px; }
+    100% { left: 100vw; }
+}
+
+@keyframes moveCar3 {
+    0% { left: -100px; }
+    100% { left: 100vw; }
+}
+
+@keyframes moveCar4 {
+    0% { left: -100px; }
+    100% { left: 100vw; }
+}
+
+@keyframes moveCar5 {
+    0% { left: -100px; }
+    100% { left: 100vw; }
+}
+
+/* Add some delay to stagger the animation start */
+#car2 {
+    animation-delay: 2s;
+}
+
+#car3 {
+    animation-delay: 4s;
+}
+
+#car4 {
+    animation-delay: 6s;
+}
+
+#car5 {
+    animation-delay: 8s;
+}
+
+    </style>
+</head>
+<body>
+    <div class="car" id="car1"> </div>
+    <div class="car" id="car2"></div>
+    <div class="car" id="car3"></div>
+    <div class="car" id="car4"></div>
+    <div class="car" id="car5"></div>
+</body>
+</html>
